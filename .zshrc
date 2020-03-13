@@ -14,12 +14,6 @@ fi
 export EDITOR=vim
 eval "$(direnv hook bash)"
 
-# git alias
-alias gb="git branch"
-## alias ggg="/bin/bash ~/.my_shellscript/camel_snake.sh"
-## alias gggall="/bin/bash ~/.my_shellscript/camel_snake_all.sh"
-## alias ggu="/bin/bash ~/.my_shellscript/del_head_underscore.sh"
-
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -89,48 +83,6 @@ export PATH="$PATH:$HOME/flutter/bin"
   zplug "paulirish/git-open", as:plugin # GitHub, GitLab, BitBucketを開けるようにするコマンド … https://github.com/paulirish/git-open
   zplug check || zplug install
   zplug load
-}
-
-: "略語展開(iab)" && {
-  : "exaが導入済みならlsの代わりにexaを使う" && {
-      type exa > /dev/null && {
-#        abbrev-alias ls="exa"
-#        abbrev-alias l="exa"
-#        abbrev-alias la="exa -alhg --group-directories-first --git --time-style long-iso"
-#        abbrev-alias l1="exa -1"
-      } || {
-#        abbrev-alias l="ls -laG" # G: macOSで色を付ける
-#        abbrev-alias la="ls -lahG"
-#        abbrev-alias l1="ls -1G"
-      }
-  }
-#  abbrev-alias tree="tree -NC" # N: 文字化け対策, C:色をつける
-#  abbrev-alias gpl="git pull"
-#  abbrev-alias gps="git push"
-#  abbrev-alias gco="git commit -av"
-#  abbrev-alias ga="git add -A"
-#  abbrev-alias gs="git status -s"
-#  abbrev-alias dp="docker ps"
-#  abbrev-alias di="docker images"
-#  abbrev-alias dce="docker-compose exec"
-#  abbrev-alias edi="eval \$(dinghy env)"
-#  abbrev-alias -g a1="awk '{print \$1}'"
-#  abbrev-alias -g a2="awk '{print \$2}'"
-#  abbrev-alias -g a3="awk '{print \$3}'"
-#  abbrev-alias -g a4="awk '{print \$4}'"
-#  abbrev-alias -g a5="awk '{print \$5}'"
-#  abbrev-alias -g a6="awk '{print \$6}'"
-#  abbrev-alias -g a7="awk '{print \$7}'"
-#  abbrev-alias -g a8="awk '{print \$8}'"
-#  abbrev-alias -g a9="awk '{print \$9}'"
-#  abbrev-alias -g a10="awk '{print \$10}'"
-#  abbrev-alias -g a11="awk '{print \$11}'"
-#  abbrev-alias -g a12="awk '{print \$12}'"
-#  abbrev-alias -g a13="awk '{print \$13}'"
-#  abbrev-alias -g a14="awk '{print \$14}'"
-#  abbrev-alias -g a15="awk '{print \$15}'"
-#  abbrev-alias -g a16="awk '{print \$16}'"
-#  abbrev-alias -g and="|" # パイプが遠いのでandを割り当てる。例えば`tail -f ./log | grep error`を`tail -f ./log and grep error`と書くことができる
 }
 
 : "cd先のディレクトリのファイル一覧を表示する" && {
