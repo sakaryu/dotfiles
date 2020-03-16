@@ -36,12 +36,6 @@ if dein#check_install()
   call dein#install()
 endif
 
-" NERDTreeの自動起動（ファイル名指定時にはNERDTreeを表示しない）
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Ctrl + n で 起動/終了
-nnoremap <C-n> :NERDTreeToggle<CR>
-
 autocmd BufNewFile,BufRead *.vue setfiletype vue
 
 " カーソル移動
@@ -52,12 +46,12 @@ nnoremap <C-e> <End>
 inoremap <C-f> <RIGHT>
 inoremap <C-b> <LEFT>
 
-let g:neocomplcache_enable_at_startup = 2
-let g:go_fmt_command="goimports"
+" Netrw
 let g:netrw_alto = 1
 let g:netrw_altv = 1
 let g:netrw_keepdir=0
 let g:netrw_banner = 0
+
 let g:solarized_termcolors=256
 let mapleader = "\<Space>"
 
@@ -107,18 +101,6 @@ set omnifunc=csscomplete#CompleteCSS
 set omnifunc=xmlcomplete#CompleteTags
 set omnifunc=phpcomplete#CompletePHP
 
-call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdcommenter' " コメントアウト
-Plug 'joshdick/onedark.vim'
-Plug 'airblade/vim-gitgutter' " gitの差分を左端に表示
-"Plug 'Shougo/denite.nvim'
-"Plug 'Shougo/neomru.vim'
-"Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
-Plug 'fatih/vim-go'
-call plug#end()
-
-colorscheme onedark
 syntax enable
 
 hi Search ctermbg=DarkGreen
