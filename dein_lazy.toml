@@ -1,0 +1,17 @@
+# deinの遅延読み込みの際の条件指定
+# on_ft     ファイルタイプがマッチしたとき。String or List
+# on_path   パスが一致した時
+# on_func   呼び出し機能が一致した時
+# on_source プラグインがロードされたとき
+# on_cmd    コマンドが一致した時
+# on_map    キーが一致した時
+# on_i      on_event が奨励
+# on_event  eventが発生したら
+#           http://vim-jp.org/vimdoc-ja/autocmd.html#autocmd-events
+
+[[plugins]]
+repo = 'vim-scripts/taglist.vim'
+# どのタイミングでプラグインを読み込むのか指定
+# ここではファイルタイプが以下のいずれかに一致したときに読み込むように指定
+on_ft = ['c', 'cpp', 'cmake']
+hook_source = 'map <C-t> :TlistToggle<CR>'

@@ -10,6 +10,9 @@ if [ -d $HOME/.anyenv ] ; then
     done
 fi
 
+# golang
+export PATH="$GOPATH/bin:$PATH"
+
 # direnv
 export EDITOR=vim
 eval "$(direnv hook bash)"

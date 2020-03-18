@@ -1,0 +1,60 @@
+# dein本体。基本は repo に github のリポジトリを設定するだけでよい
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+# nerdcommenter : コメントアウト
+repo = 'scrooloose/nerdcommenter'
+
+# vim-gitgutter : gitの差分を左端に表示
+repo = 'airblade/vim-gitgutter'
+
+# NERDTreeの設定
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+    " NERDTreeの自動起動（ファイル名指定時にはNERDTreeを表示しない）
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    " Ctrl + n で 起動/終了
+    map <C-n> :NERDTreeToggle<CR>
+'''
+
+# onedarkの設定
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+hook_add = 'colorscheme onedark'
+
+# vim-lspの設定
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+    nnoremap <C-]> :LspDefinition<CR>
+'''
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+# go-lspの設定
+[[plugins]]
+repo = 'mattn/vim-goimports'
+
+# ultisnips : 強いsnippets
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+# vim-snippets
+[[plugins]]
+repo = 'honza/vim-snippets'

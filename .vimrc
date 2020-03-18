@@ -38,13 +38,20 @@ endif
 
 autocmd BufNewFile,BufRead *.vue setfiletype vue
 
+" エディタのコマンドではありません、の解決
+filetype plugin indent on
+
 " カーソル移動
 inoremap <C-a> <Home>
 nnoremap <C-a> <Home>
+tnoremap <C-a> <Home>
 inoremap <C-e> <End>
 nnoremap <C-e> <End>
+tnoremap <C-e> <End>
 inoremap <C-f> <RIGHT>
+tnoremap <C-f> <RIGHT>
 inoremap <C-b> <LEFT>
+tnoremap <C-b> <LEFT>
 
 " Netrw
 let g:netrw_alto = 1
@@ -59,7 +66,7 @@ runtime macros/matchit.vim
 
 set lazyredraw
 set ttyfast " ターミナル接続を高速化
-set bs=start
+set backspace=start
 set background=dark
 set number
 set enc=utf8
