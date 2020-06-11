@@ -1,0 +1,62 @@
+[[plugins]]
+repo = "neoclide/coc.nvim"
+merged = 0
+rev = "release"
+hook_add = """
+source ~/.config/nvim/plugins/coc.rc.vim
+"""
+
+# vim-gitgutter : gitの差分を左端に表示
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+# vim-fugitive : git操作をする
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+# onedarkの設定
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+hook_add = """
+source ~/.config/nvim/plugins/onedark.rc.vim
+"""
+
+[[plugins]]
+repo = "Shougo/denite.nvim"
+hook_add = """
+source ~/.config/nvim/plugins/denite.rc.vim
+"""
+
+[[plugins]]
+repo = "shougo/deol.nvim"
+hook_add = """
+source ~/.config/nvim/plugins/deol.rc.vim
+"""
+
+[[plugins]]
+repo ="kristijanhusak/defx-git"
+hook_add = '''
+call defx#custom#column('git', 'indicators', {
+  \ 'Modified'  : '✹',
+  \ 'Staged'    : '✚',
+  \ 'Untracked' : '✭',
+  \ 'Renamed'   : '➜',
+  \ 'Unmerged'  : '═',
+  \ 'Ignored'   : '☒',
+  \ 'Deleted'   : '✖',
+  \ 'Unknown'   : '?'
+  \ })
+'''
+
+[[plugins]]
+repo = "Shougo/defx.nvim"
+depends = ["defx-git"]
+hook_add = """
+source ~/.config/nvim/plugins/defx.rc.vim
+"""
+
+[[plugins]]
+repo = "slim-template/vim-slim"
+hook_add = """
+source ~/.config/nvim/plugins/vim-slim.rc.vim
+"""

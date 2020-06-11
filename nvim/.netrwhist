@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/sakai-ryujiro/.config/nvim'
+let g:netrw_dirhist_6='/Users/sakai-ryujiro/go/1.13.8/src/github.com/uuum/lmnd-motion-graphics/api/handlers'
+let g:netrw_dirhist_5='/'
+let g:netrw_dirhist_4='/Users/sakai-ryujiro/uuum/lmnd-motion-graphics'
+let g:netrw_dirhist_3='/Users/sakai-ryujiro/uuum/lmnd_vue_study'
+let g:netrw_dirhist_2='/Users/sakai-ryujiro'
+let g:netrw_dirhist_1='/Users/sakai-ryujiro/uuum/lmnd-motion-graphics'
