@@ -26,6 +26,9 @@ if dein#load_state(s:dein_dir)
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
+  call map(dein#check_clean(), "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+
   " 設定終了
   call dein#end()
   call dein#save_state()
@@ -35,6 +38,9 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+syntax on
+colorscheme onedark
 
 autocmd BufNewFile,BufRead *.vue setfiletype vue
 
@@ -98,15 +104,6 @@ set wrap
 set updatetime=100
 set laststatus=2 " ステータスラインを常に表示
 set scrolloff=16
-
-" オムニ補完の設定（insertモードでCtrl+oで候補を出す、Ctrl+n
-" Ctrl+pで選択、Ctrl+yで確定）
-set omnifunc=pythoncomplete#Complete
-set omnifunc=javascriptcomplete#CompleteJS
-set omnifunc=htmlcomplete#CompleteTags
-set omnifunc=csscomplete#CompleteCSS
-set omnifunc=xmlcomplete#CompleteTags
-set omnifunc=phpcomplete#CompletePHP
 
 syntax enable
 

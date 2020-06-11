@@ -26,6 +26,9 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # flutter
 export PATH="$PATH:$HOME/flutter/bin"
 
+# brew git
+export PATH="/usr/local/Cellar/git/2.26.1_1/bin/git:$PATH"
+
 : "一般的な設定" && {
   autoload -U compinit && compinit -d ${COMPDUMPFILE} # 補完機能の強化
   setopt correct # 入力しているコマンド名が間違っている場合にもしかして：を出す。

@@ -2,14 +2,15 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# denite
 [[plugins]]
-repo = 'Shougo/denite.nvim'
+repo = 'posva/vim-vue'
 
 # nerdcommenter : コメントアウト
+[[plugins]]
 repo = 'scrooloose/nerdcommenter'
 
 # vim-gitgutter : gitの差分を左端に表示
+[[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 # NERDTreeの設定
@@ -26,35 +27,4 @@ hook_add = '''
 # onedarkの設定
 [[plugins]]
 repo = 'joshdick/onedark.vim'
-hook_add = 'colorscheme onedark'
 
-# vim-lspの設定
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-hook_add = '''
-    nnoremap <C-]> :LspDefinition<CR>
-'''
-
-[[plugins]]
-repo = 'mattn/vim-lsp-settings'
-
-# go-lspの設定
-[[plugins]]
-repo = 'mattn/vim-goimports'
-
-# ultisnips : 強いsnippets
-[[plugins]]
-repo = 'SirVer/ultisnips'
-
-# vim-snippets
-[[plugins]]
-repo = 'honza/vim-snippets'
