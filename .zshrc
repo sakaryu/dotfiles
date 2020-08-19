@@ -13,10 +13,6 @@ fi
 # golang
 export PATH="$GOPATH/bin:$PATH"
 
-# direnv
-export EDITOR=vim
-eval "$(direnv hook bash)"
-
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -98,10 +94,6 @@ export PATH="/usr/local/Cellar/git/2.26.1_1/bin/git:$PATH"
 
 : "sshコマンド補完を~/.ssh/configから行う" && {
   function _ssh { compadd $(fgrep 'Host ' ~/.ssh/*/config | grep -v '*' |  awk '{print $2}' | sort) }
-}
-
-: "direnv" && {
-  type direnv > /dev/null && eval "$(direnv hook zsh)"
 }
 
 # Import from /.zshrc

@@ -1,0 +1,12 @@
+# macの場合
+- brewのインストール
+- neovimのインストール
+- zshの設定
+- anyenvのインストール
+  - brew install anyenv
+  - anyenv init
+  - nodenvのインストール
+    - yarnのインストール
+  - pyenvのインストール
+    - pipの更新
+    - neovimのインストール
