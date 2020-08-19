@@ -3,7 +3,7 @@
   "suggest.preferCompleteThanJumpPlaceholder": true,
   "suggest.enablePreselect": true,
 	"tsserver.npm": "/Users/sakai-ryujiro/.anyenv/envs/ndenv/shims/npm",
-	"eslint.filetypes": ["javascript", "vue"],
+	"eslint.filetypes": ["javascript", "javascriptreact", "typescriptreact", "vue"],
   "vetur.useWorkspaceDependencies": true,
   "solargraph.commandPath": "/Users/sakai-ryujiro/.rvm/gems/ruby-2.5.7/bin/solargraph",
   "solargraph.useBundler": false,

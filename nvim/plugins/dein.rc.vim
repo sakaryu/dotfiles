@@ -25,5 +25,12 @@ if dein#check_install()
   call dein#install()
 endif
 
+" Neovim起動時にdein.tomlファイルをチェックし、削除されているプラグインがあった場合アンインストールする
+let s:removed_plugins = dein#check_clean()
+if len(s:removed_plugins) > 0
+  call map(s:removed_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+endif
+
 filetype plugin indent on
 syntax enable
