@@ -2,10 +2,11 @@
   "suggest.noselect": true,
   "suggest.preferCompleteThanJumpPlaceholder": true,
   "suggest.enablePreselect": true,
-	"tsserver.npm": "/Users/sakai-ryujiro/.anyenv/envs/ndenv/shims/npm",
+	"tsserver.npm": "/Users/system047/.anyenv/envs/ndenv/shims/npm",
 	"eslint.filetypes": ["javascript", "javascriptreact", "typescriptreact", "vue"],
   "vetur.useWorkspaceDependencies": true,
-  "solargraph.commandPath": "/Users/sakai-ryujiro/.rvm/gems/ruby-2.5.7/bin/solargraph",
-  "solargraph.useBundler": false,
-  "go.goplsPath": "/Users/sakai-ryujiro/go/1.13.8/bin/gopls"
+  "solargraph.useBundler": true,
+  "solargraph.bundlerPath": "/Users/system047/.anyenv/envs/rbenv/shims/bundle",
+  "solargraph.checkGemVersion": false,
+  "go.goplsPath": "/Users/system047/go/1.13.8/bin/gopls"
 }

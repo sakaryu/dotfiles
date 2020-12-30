@@ -10,3 +10,5 @@
   - pyenvのインストール
     - pipの更新
     - neovimのインストール
+  - goenvのインストール
+- Unityのインストール    

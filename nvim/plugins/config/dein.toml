@@ -60,3 +60,15 @@ repo = "slim-template/vim-slim"
 hook_add = """
 source ~/.config/nvim/plugins/vim-slim.rc.vim
 """
+
+[[plugins]]
+repo = "othree/html5.vim"
+hook_add = """
+source ~/.config/nvim/plugins/html5.rc.vim
+"""
+
+[[plugins]]
+repo = "pangloss/vim-javascript"
+hook_add = """
+source ~/.config/nvim/plugins/vim-javascript.rc.vim
+"""
