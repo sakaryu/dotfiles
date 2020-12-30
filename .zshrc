@@ -11,7 +11,9 @@ if [ -d $HOME/.anyenv ] ; then
 fi
 
 # golang
+export PATH="$GOROOT/bin/$PATH"
 export PATH="$GOPATH/bin:$PATH"
+export GO111MODULE=on
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
