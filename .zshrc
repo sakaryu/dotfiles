@@ -27,6 +27,9 @@ export PATH="$PATH:$HOME/flutter/bin"
 # brew git
 export PATH="/usr/local/Cellar/git/2.26.1_1/bin/git:$PATH"
 
+# .bin (とりあえずterraform-lspのみ置いてある)
+export PATH="$PATH:$HOME/.bin"
+
 : "一般的な設定" && {
   autoload -U compinit && compinit -d ${COMPDUMPFILE} # 補完機能の強化
   setopt correct # 入力しているコマンド名が間違っている場合にもしかして：を出す。
