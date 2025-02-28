@@ -17,8 +17,7 @@
 				"terraform",
 				"tf"
 			],
-			"initializationOptions": {},
-			"settings": {}
+			"initializationOptions": {}
 		}
 	}
 }

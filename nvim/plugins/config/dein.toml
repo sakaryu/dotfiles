@@ -1,3 +1,4 @@
+# LSPを使えるようにする
 [[plugins]]
 repo = "neoclide/coc.nvim"
 merged = 0
@@ -6,11 +7,11 @@ hook_add = """
 source ~/.config/nvim/plugins/coc.rc.vim
 """
 
-# vim-gitgutter : gitの差分を左端に表示
+# gitの差分を左端に表示
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
-# vim-fugitive : git操作をする
+# git操作をする
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
@@ -21,12 +22,14 @@ hook_add = """
 source ~/.config/nvim/plugins/onedark.rc.vim
 """
 
+# fuzzy finder
 [[plugins]]
 repo = "Shougo/denite.nvim"
 hook_add = """
 source ~/.config/nvim/plugins/denite.rc.vim
 """
 
+# ターミナル機能を拡張
 [[plugins]]
 repo = "Shougo/deol.nvim"
 hook_add = """
@@ -48,6 +51,7 @@ call defx#custom#column('git', 'indicators', {
   \ })
 '''
 
+# ファイルエクスプローラー
 [[plugins]]
 repo = "Shougo/defx.nvim"
 depends = ["defx-git"]
@@ -61,14 +65,21 @@ hook_add = """
 source ~/.config/nvim/plugins/vim-slim.rc.vim
 """
 
-[[plugins]]
-repo = "othree/html5.vim"
-hook_add = """
-source ~/.config/nvim/plugins/html5.rc.vim
-"""
+#[[plugins]]
+#repo = "othree/html5.vim"
+#hook_add = """
+#source ~/.config/nvim/plugins/html5.rc.vim
+#"""
 
 [[plugins]]
 repo = "pangloss/vim-javascript"
 hook_add = """
 source ~/.config/nvim/plugins/vim-javascript.rc.vim
 """
+
+# GitHub Copilot
+[[plugins]]
+repo = 'github/copilot.vim'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'

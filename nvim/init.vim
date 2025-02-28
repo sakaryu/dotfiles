@@ -1,6 +1,9 @@
 " Python 3.x系のPathを設定
 let g:python3_host_prog = '~/.anyenv/envs/pyenv/shims/python3'
 
+" coc.nvim で 使う node.js を指定
+let g:coc_node_path = '~/.anyenv/envs/nodenv/versions/20.8.0/bin/node'
+
 " dein.vim を使うために以下を記述
 runtime! plugins/dein.rc.vim
 
